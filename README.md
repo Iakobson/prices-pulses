@@ -114,4 +114,15 @@
    └─ seed.js
 ```
 
+### додаткові пакети
+
+**prettier**\
+``npm install --save-dev --save-exact prettier``
+
+
+
+
+
+
+
 
