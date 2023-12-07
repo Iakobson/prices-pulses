@@ -116,8 +116,16 @@
 
 ### додаткові пакети
 
-**prettier**\
+#### prettier
+Install **Prettier** locally:\
 ``npm install --save-dev --save-exact prettier``
+
+Then, create an empty config file to let editors and other tools know you are using Prettier:\
+``node --eval "fs.writeFileSync('.prettierrc','{}\n')"``
+
+Приклад використання на конкретному файлі:\
+``npx prettier --write seeder/placeholder-data.ts``
+
 
 
 
