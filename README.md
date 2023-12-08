@@ -1,6 +1,31 @@
 # prices-pulses
 
 
+## 🗄️ Backend Technology
+
+- 🔧 Node.js
+- 🚀 Express.js
+- 📜 TypeScript
+- 📦 MongoDB
+- ⚡ Socket.io
+- 🔄 Redis
+- 🔑 Joi
+- 🔐 JWT
+- 🃏 Jest Tests
+- 🐳 Docker
+
+## 🖥️ Frontend Technology
+- 🌐 Next.js
+- 📜 TypeScript
+- 🎨 MUI
+- 🔁 Redux Toolkit
+- ⚡ Socket.io
+- 🔍 Eslint
+- 📡 Axios
+- 🔐 Next-Auth
+- 🌲 Cypress Tests
+- 🐳 Docker
+
 ### структура робочих файлів проекту
 
 ```go
@@ -114,6 +139,12 @@
    └─ seed.js
 ```
 
+ <p align="center">(🚧  The project is under active development! 🔨)</p>
+
+
+
+
+
 ### додаткові пакети
 
 #### prettier
@@ -130,7 +161,16 @@ Then, create an empty config file to let editors and other tools know you are us
 
 
 
-
+## ⚡️ Features
+- 🔑 authentication and authorization for secure access to the system
+- 👑 login as a Super Admin, Client, and User for different access levels
+- 🖼️ image uploaded preview for a user-friendly experience
+- ✉️ email templates for efficient and consistent communication
+- 🎨 themes color setting and dark mode for a personalized interface
+- 🚫 Allow admin to enable/disable user registration module
+- 🍪 GDPR Cookie for a personalized and seamless user experience
+- 📣 Integrate Telegram for messaging and notifications
+- 💬 real-time custom messenger using socket.io for seamless communication with the company, users, and clients
 
 
 
