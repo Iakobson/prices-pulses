@@ -157,9 +157,16 @@ Then, create an empty config file to let editors and other tools know you are us
 Приклад використання на конкретному файлі:\
 ``npx prettier --write seeder/placeholder-data.ts``
 
+#### eslint-config-prettier
+We recommend including it in your ESLint config to make ESLint and Prettier work together.
+
+``npm install --save-dev eslint-config-prettier``
 
 
 
+
+
+- - -
 
 ## ⚡️ Features
 - 🔑 authentication and authorization for secure access to the system
