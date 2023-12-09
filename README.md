@@ -66,11 +66,9 @@
 │  ├─ 📁signin/
 │  │  └─ page.tsx
 │  │
-│  ├─ 📁beverages/
+│  ├─ 📁categories/
 │  │  ├─ layout.tsx
-│  │  ├─ 📁alcoholic/
-│  │  │  └─ page.tsx
-│  │  ├─ 📁nonalcoholic/
+│  │  ├─ 📁beverages/
 │  │  │  └─ page.tsx
 │  │  ├─ 📁create/
 │  │  │  └─ page.tsx
