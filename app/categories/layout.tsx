@@ -2,10 +2,11 @@
 
 import Link from 'next/link';
 
-import AppBar from '@mui/material/AppBar';
-
+// MUI components
+import Box from '@mui/material/Box';
 import CategoryIcon from '@mui/icons-material/Category';
-
+// views (design) elements
+import CategoriesHeader from '@/views/Categories/CategoriesHeader';
 
 
 
@@ -23,24 +24,13 @@ export default function CategoriesLayout({
 }:{ children:React.ReactNode;
 }) {
   return (
-    <section>
-        {/*  */}
+    <Box>
+	  <CategoriesHeader />
+      <section>
         <h1>Категорії товарів.</h1>
         {/*  */}
-        <ul>
-          <li>
-            <Link href="/categories/beverages">Напої</Link>
-          </li>
-          <li>
-            <Link href="/categories/seafood">Морепродукти</Link>
-          </li>
-          <li>
-            <Link href="/categories/household">Побутові речі</Link>
-          </li>
-        </ul>
-      <section>
         {children}
       </section>
-    </section>
+	</Box>
   );
 }
