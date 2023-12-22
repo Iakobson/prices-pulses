@@ -40,18 +40,19 @@ const StyledExpandMore = styled((props: ExpandMoreProps) => {
 
 export default function CoctailReviewCard({ cocktail }:CoctailReviewCardProps) {
   const [expanded, setExpanded] = React.useState(false);
-
+  const firstCoctailLetter = cocktail.title.charAt(0);
+  
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345, boxShadow: 3, borderRadius: 8 }}>
 	{/*  */}
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            R
+            {firstCoctailLetter}
           </Avatar>
         }
         action={
