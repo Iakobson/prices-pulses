@@ -21,11 +21,16 @@ const theme = createTheme({
   typography: {
     fontFamily: roboto.style.fontFamily,
     h1: {
-      fontSize: '1.6rem',
-      fontWeight: 400,
+      fontSize: '1.8rem',
+      fontWeight: 800,
       margin: '1rem 0',
     },
     h2: {
+      fontSize: '1.6rem',
+      fontWeight: 600,
+      margin: '1rem 0',
+    },
+	h3: {
       fontSize: '1.4rem',
       fontWeight: 400,
       margin: '1rem 0',
