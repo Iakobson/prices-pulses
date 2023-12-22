@@ -2,6 +2,8 @@
 import { Roboto } from 'next/font/google';
 import { createTheme } from '@mui/material/styles';
 
+import { purple } from '@mui/material/colors';
+
 const roboto = Roboto({
   weight: ['300', '400', '500', '700'],
   subsets: ['latin'],
@@ -15,7 +17,7 @@ const theme = createTheme({
       main: '#f0c000', // mainly orange color
     },
     secondary: {
-      main: '#6f42c1', // purple shade
+      main: purple[500], // purple shade
     },
   },
   typography: {
