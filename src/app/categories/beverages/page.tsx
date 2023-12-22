@@ -1,19 +1,54 @@
-// @/app/categories/beverages/page.tsx
-import Link from 'next/link';
+// @/app/categories/beverages/[beverageId]/page.tsx
+import styles from './page.module.css';
+import { Metadata } from 'next';
+import { fetchBeverageById } from '@/services/get-data';
 
-export default function BeveragesPage() {
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
+
+import BeverageCard from '@/views/Categories/BeverageCard';
+
+type Props = {
+  params:{ // only property that is an object
+    beverageId:string;
+  };
+};
+
+// function defines page metadata for a specific drink
+export async function generateMetadata(
+  {params: {beverageId}}:Props):Promise<Metadata> {
+  // to get the data of a specific drink
+  const beverage = await fetchBeverageById(Number(beverageId));
+
+  if (!beverage) {
+    return {
+      title: 'Loading...'
+    };
+  }
+
+  return {
+    // defining meta title of page
+    title: beverage.title,
+  };
+};
+
+export default async function BeveragePage({params: {beverageId}}:Props) {
+  // to get the data of a specific drink
+  const beverage = await fetchBeverageById(Number(beverageId));
+
+  if (!beverage) {
+    return <div>Такого напою не знайдено...</div>;
+  }
+
   return (
-    <>
-      <section>
-        <h1>Напої</h1>
+    <Container>
+      <Typography variant="h2" className={styles.header}>
+        Обраний напій:
+      </Typography>
+      {/* Інформація про напій */}
+	  
+      <BeverageCard beverage={beverage}/>
 
-        <p>Порівнюємо ціни різних напоїв</p>
-        {/*  */}
-        <nav>
-          <Link href="/categories/beverages/create">Додати напій</Link>
-        </nav>
-      </section>
-
-    </>
+    </Container>
   );
 }
