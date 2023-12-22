@@ -15,7 +15,7 @@ const theme = createTheme({
       main: '#f0c000', // mainly orange color
     },
     secondary: {
-      main: '#208080', // color of sea wave
+      main: '#6f42c1', // purple shade
     },
   },
   typography: {
