@@ -79,6 +79,25 @@ _This package hosts the incubator components that are not yet ready to move to c
 
 ## npm "dependencies"
 
+### 🐘 "@vercel/postgres"
+_API reference for the Vercel Postgres SDK that provides an efficient way to interact with your Postgres database_
+
+* npm-site: https://socket.dev/npm/package/@vercel/postgres
+  - version: 0.5.1
+  - install: `npm i @vercel/postgres`
+  - weekly downloads: 30 000
+* home-page: https://vercel.com/docs/storage/vercel-postgres/sdk
+* quickstart: https://vercel.com/docs/storage/vercel-postgres/quickstart
+
+#### 🔍 "zod"
+_TypeScript-first schema validation with static type inference_
+
+* npm-site: https://www.npmjs.com/package/zod
+  - version: 3.22.4
+  - install: `npm install zod`
+  - weekly downloads: 5 300 000
+* home-page: https://zod.dev/
+
 ### 🧩 "clsx"
 A tiny (234B) utility for constructing className strings conditionally.\
 Also serves as a faster & smaller drop-in replacement for the `classnames` module.
@@ -93,14 +112,6 @@ Also serves as a faster & smaller drop-in replacement for the `classnames` modul
 The clsx function can take any number of arguments, each of which can be an Object, Array, Boolean, or String.
 
 ### 🔒 "bcrypt"
-
-* npm-site:
-  - version:
-  - install: ``
-  - weekly downloads:
-* home-page:
-
-### 
 
 * npm-site:
   - version:
