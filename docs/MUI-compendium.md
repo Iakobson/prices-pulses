@@ -1,6 +1,33 @@
-# Material UI
+# Material UI compendium
 
 To support the **App Router**, the components and hooks from **Base UI** that need access to browser APIs are exported with the `"use client"` directive.
+
+## MUI integration with Next.js [App Router](https://nextjs.org/docs/app)
+
+Inside ``app/layout.tsx``, import the `AppRouterCacheProvider` and wrap all elements under the `<body>` with it:
+```tsx
+ // app/layout.tsx
+  import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter'; 
+
+   export default function RootLayout(props) {
+     const { children } = props;
+     return (
+       <html lang="en">
+         <body>
+          <AppRouterCacheProvider>
+            {children}
+          </AppRouterCacheProvider>
+         </body>
+       </html>
+     );
+   }
+```
+
+
+
+
+
+
 
 ## Layout MUI system
 > _Stack is ideal for one-dimensional layouts, while Grid is preferable when you need both vertical and horizontal arrangement._
