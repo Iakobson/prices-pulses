@@ -79,7 +79,7 @@ _This package hosts the incubator components that are not yet ready to move to c
 
 ## npm "dependencies"
 
-### "clsx"
+### 🧩 "clsx"
 A tiny (234B) utility for constructing className strings conditionally.\
 Also serves as a faster & smaller drop-in replacement for the `classnames` module.
 
@@ -92,9 +92,7 @@ Also serves as a faster & smaller drop-in replacement for the `classnames` modul
 
 The clsx function can take any number of arguments, each of which can be an Object, Array, Boolean, or String.
 
-
-
-### 
+### 🔒 "bcrypt"
 
 * npm-site:
   - version:
@@ -122,7 +120,7 @@ The clsx function can take any number of arguments, each of which can be an Obje
 
 ## npm "devDependencies"
 
-### dotenv
+### 🔐 dotenv
 
 * npm-site:
   - version:
