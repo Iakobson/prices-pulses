@@ -2,7 +2,7 @@
 
 ## MUI core
 
-### @mui/material
+### 🖼️ @mui/material 🖌️
 _Material UI is an open-source React component library that implements Google's Material Design.
 It's comprehensive and can be used in production out of the box._
 
@@ -12,7 +12,7 @@ It's comprehensive and can be used in production out of the box._
   - weekly downloads: 3 000 000
 * home-page: https://mui.com/material-ui/
 
-#### @emotion/react & @emotion/styled
+#### 🚀 @emotion/react & 💅 @emotion/styled 🎭
 _Allows developers to skip the styled API abstraction and style components and elements directly._
 
 * npm-site: https://www.npmjs.com/package/@emotion/react
@@ -21,24 +21,33 @@ _Allows developers to skip the styled API abstraction and style components and e
   - weekly downloads: 6 000 000
 * home-page: https://emotion.sh/docs/introduction
 
+#### 🎨 @mui/icons-material 📷
+_This package provides the Google Material Icons converted to SvgIcon components._
 
-### @mui/material-nextjs
-Material UI integration with the Next.js App Router
+* npm-site: https://www.npmjs.com/package/@mui/icons-material
+  - version: 5.15.0
+  - install: `npm install @mui/icons-material`
+  - weekly downloads: 2 552 700
+* home-page: https://mui.com/material-ui/material-icons/
+
+### 🌐 @mui/material-nextjs 🧩
+_Material UI integration with the Next.js App Router_
 - Built using [@mui/base](https://mui.com/base-ui/getting-started/)
 - Built with TypeScript
 - Implement [Material You](https://m3.material.io/) (Material Design 3)
 
-
 * npm-site: https://www.npmjs.com/package/@mui/material-next
-  - version: 
+  - version: 6.0.0-alpha.115
   - install: `npm install @mui/material-nextjs`
-  - weekly downloads: 
+  - weekly downloads: 2 700
 * home-page: https://mui.com/material-ui/guides/nextjs/
 * questions: https://stackoverflow.com/questions/tagged/material-ui+next.js
 
 > This package is a nursery for components that will ultimately replace the @mui/material ones.
 
-#### @emotion/cache
+#### 📦 @emotion/cache 🧠
+_**createCache** allows for low level customization of how styles get inserted by emotion. 
+It's intended to be used with the `<CacheProvider/>` component to override the default cache, which is created with sensible defaults for most applications._
 
 * npm-site: https://www.npmjs.com/package/@emotion/cache
   - version: 11.11.0
@@ -46,10 +55,8 @@ Material UI integration with the Next.js App Router
   - weekly downloads: 11 412 600
 * home-page: https://github.com/emotion-js/emotion/tree/main#readme
 
-
-
-### @mui/system
-MUI System is a collection of CSS utilities for rapidly laying out custom designs with MUI component libraries.
+#### 🛠️ @mui/system 🛠️
+_MUI System is a collection of CSS utilities for rapidly laying out custom designs with MUI component libraries._
 
 * npm-site: https://www.npmjs.com/package/@mui/system
   - version: 5.15.0
@@ -59,22 +66,8 @@ MUI System is a collection of CSS utilities for rapidly laying out custom design
 
 MUI System's core utility is the `sx` prop, which gives you a quick and efficient way to apply the correct design tokens directly to a React element.
 
-### @emotion/cache
-**createCache** allows for low level customization of how styles get inserted by emotion. 
-It's intended to be used with the `<CacheProvider/>` component to override the default cache, which is created with sensible defaults for most applications.
-
-
-### @mui/icons-material
-This package provides the Google Material Icons converted to SvgIcon components.
-
-* npm-site: https://www.npmjs.com/package/@mui/icons-material
-  - version: 5.15.0
-  - install: `npm install @mui/icons-material`
-  - weekly downloads: 2 552 700
-* home-page: https://mui.com/material-ui/material-icons/
-
-### @mui/lab
-This package hosts the incubator components that are not yet ready to move to core.
+#### 🧪 @mui/lab 🔬
+_This package hosts the incubator components that are not yet ready to move to core._
 
 * npm-site: https://www.npmjs.com/package/@mui/lab
   - version: 5.0.0-alpha.156
