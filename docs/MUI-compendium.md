@@ -33,18 +33,7 @@ Inside ``app/layout.tsx``, import the `AppRouterCacheProvider` and wrap all elem
 
 - - -
 
-## MUI components
-
-
-### App Bar
-It displays information and actions relating to the current screen.\
-It's used for branding, screen titles, navigation, and actions.\
-It can transform into a contextual action bar or be used as a navbar.
-
-* docs: https://mui.com/material-ui/react-app-bar/
-* code:
-
-#### [Material Icons](https://mui.com/material-ui/material-icons/)
+### [Material Icons](https://mui.com/material-ui/material-icons/)
 
 2,100+ ready-to-use React Material Icons from the official website.\
 ``npm install @mui/icons-material``
@@ -55,39 +44,6 @@ Each Material icon also has a "theme":
 + **Rounded** theme is exported as @mui/icons-material/DeleteRounded,
 + **Twotone** theme is exported as @mui/icons-material/DeleteTwoTone,
 + **Sharp** theme is exported as @mui/icons-material/DeleteSharp.
-
-
-### Drawer
-The navigation drawers (or "sidebars") provide ergonomic access to destinations in a site or app functionality such as switching accounts.
-A navigation drawer can either be permanently on-screen or controlled by a navigation menu icon.
-
-* docs: https://mui.com/material-ui/react-drawer/
-* code:
-
-[Side sheets](https://m2.material.io/components/sheets-side) are supplementary surfaces primarily used on tablet and desktop.
-
-Modal side sheets are used on mobile instead of standard side sheets, due to limited screen size.
-They can display the same types of content as standard side sheets, but must be dismissed in order to interact with the underlying content.
-
-Side sheets should be placed on the opposite side of a side navigation drawer to avoid obstructing the UI or causing confusion about the sheet’s functionality.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 - - -
 
