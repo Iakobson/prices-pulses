@@ -23,22 +23,6 @@ Inside ``app/layout.tsx``, import the `AppRouterCacheProvider` and wrap all elem
    }
 ```
 
-
-
-
-
-
-
-## Layout MUI system
-> _Stack is ideal for one-dimensional layouts, while Grid is preferable when you need both vertical and horizontal arrangement._
-
-### Grid
-> _Responsive layout grid adapts to screen size and orientation, ensuring consistency across layouts._\
-> _Material Design's responsive UI is based on a 12-column grid layout._
-
-* docs:
-* code:
-
 #### Default breakpoints
 > _Each breakpoint (a key) matches with a fixed screen width (a value):_
 - **xs**, extra-small: 0px
@@ -46,19 +30,6 @@ Inside ``app/layout.tsx``, import the `AppRouterCacheProvider` and wrap all elem
 -  **md**, medium: 900px
 - **lg**, large: 1200px
 - **xl**, extra-large: 1536px
-
-#### Fluid grids
-+ Components may have multiple widths defined, causing the layout to change at the defined breakpoint. 
-+ Width values given to larger breakpoints override those given to smaller breakpoints.
-+ The rowSpacing and columnSpacing props allow for specifying the row and column gaps independently.
-
-
-### Stack
-> _It is a container component for arranging elements vertically or horizontally._\
-> _Stack is ideal for one-dimensional layouts, while Grid is preferable when you need both vertical and horizontal arrangement._
-
-* docs: https://mui.com/material-ui/react-stack/
-* code: `import Stack from '@mui/material/Stack';`
 
 - - -
 
