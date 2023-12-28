@@ -2,7 +2,8 @@
 'use client';
 import Link from 'next/link';
 import { useFormState } from 'react-dom';
-
+// field elements for the form
+import Stack from '@mui/material/Stack';
 import { Button, InputLabel, MenuItem, Select, TextField } from '@mui/material';
 
 // put information to the database
@@ -15,22 +16,12 @@ interface DrinkCreateFormProps {
 
 export default function DrinkCreateForm({ countries, categories }:DrinkCreateFormProps) {
   //
-   const initialState = { message: null, errors: {} };
-  //
-   const [state, dispatch] = useFormState(createBeverage, initialState);
-  //
-  // return <form action={dispatch}>...</form>;
-  const handleSubmit = async (e:React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-	// Assuming this is where your form submission logic is handled
-    const result = await dispatch();
-	// Log the result (you can handle it according to your needs)
-    console.log(result);
-  };
   
   return (
-    <form onSubmit={handleSubmit}>
-      {/* <form action={createBeverage}> */}
+    <form action={createBeverage}>
+	<Stack sx={{ width: 300 }}
+        spacing={{ xs: 1, sm: 2, md: 3 }}
+      >
 	  {/* Поле форми для вибору країни виробництва напою */}
 	  <InputLabel htmlFor="country">Виберіть країну виробництва</InputLabel>
       <Select id="country" name="country" defaultValue="">
@@ -100,8 +91,11 @@ export default function DrinkCreateForm({ countries, categories }:DrinkCreateFor
         placeholder="Напишіть щось про цей напій"
       />
 
-      <Link href="/categories/beverages">Cancel</Link>
+      <Link href="/categories/beverages">
+	    <Button>Cancel</Button>
+	  </Link>
       <Button type="submit">Create Drink</Button>
+	  </Stack>
     </form>
   );
 }
