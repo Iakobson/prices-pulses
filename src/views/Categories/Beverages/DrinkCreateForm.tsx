@@ -56,28 +56,28 @@ export default function DrinkCreateForm({ countries, categories }:DrinkCreateFor
       />
 
 	  {/* Поле форми для введення ціни Auchan */}
-	  <TextField type="number" step="1"
+	  <TextField type="number"
         id="priceAuchan" name="priceAuchan"
         label="Введіть ціну магазину Auchan"
         placeholder="Ціна Ашан в ГРН"
       />
 	
 	  {/* Поле форми для введення ціни Novus */}  
-      <TextField type="number" step="1"
+      <TextField type="number"
         id="priceNovus" name="priceNovus"
         label="Введіть ціну магазину Novus"
         placeholder="Ціна Новус в ГРН"
       />	  
 	  
 	  {/* Поле форми для введення ціни Silpo */}
-	  <TextField type="number" step="1"
+	  <TextField type="number"
         id="priceSilpo" name="priceSilpo"
         label="Введіть ціну магазину Silpo"
         placeholder="Ціна Сільпо в ГРН"
       />
 	  
 	  {/* Поле форми для введення ціни ATB */}
-	  <TextField type="number" step="1"
+	  <TextField type="number"
         id="priceATB" name="priceATB"
         label="Введіть ціну магазину ATB"
         placeholder="Ціна АТБ в ГРН"
