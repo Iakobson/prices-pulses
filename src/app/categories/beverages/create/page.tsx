@@ -12,8 +12,8 @@ import { fetchAllCountries, fetchDrinkCategories } from '@/services/get-data';
 export default async function CreateBeveragePage() {
   //
   const countries = await fetchAllCountries();
-  const categories = await fetchDrinkCategories();
-
+  const categories = await fetchDrinkCategories();  
+  
   return (
     <Container>
       <BreadCrumbs
@@ -25,12 +25,10 @@ export default async function CreateBeveragePage() {
       />
       {/* Інформація про напій */}
       <h1>Створення картки нового напою.</h1>
-      {/*  */}
-      <p>Оберіть параметри напою.</p>
-      {/*  */}
-      <DrinkCreateForm
-     	countries={countries}
-        categories={categories}
+	  {/*  */}
+	  <DrinkCreateForm
+            countries={countries}
+	    categories={categories}
 	  />
     </Container>
   );
