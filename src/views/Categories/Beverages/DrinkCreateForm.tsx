@@ -4,8 +4,15 @@ import Link from 'next/link';
 import { useFormState } from 'react-dom';
 // field elements for the form
 import Stack from '@mui/material/Stack';
-import { Button, InputLabel, MenuItem, Select, TextField } from '@mui/material';
-
+import FormControl from '@mui/material/FormControl';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import Select from '@mui/material/Select';
+import TextField from '@mui/material/TextField';
+import FormHelperText from '@mui/material/FormHelperText';
+import Divider from '@mui/material/Divider';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import Button from '@mui/material/Button';
 // put information to the database
 import { createBeverage } from '@/services/data-actions';
 
@@ -21,80 +28,80 @@ export default function DrinkCreateForm({ countries, categories }:DrinkCreateFor
     <form action={createBeverage}>
 	<Stack sx={{ width: 300 }}
         spacing={{ xs: 1, sm: 2, md: 3 }}
-      >
+    >
+	  <Divider>Оберіть параметри напою.</Divider>
 	  {/* Поле форми для вибору країни виробництва напою */}
-	  <InputLabel htmlFor="country">Виберіть країну виробництва</InputLabel>
-      <Select id="country" name="country" defaultValue="">
-        <MenuItem value="" disabled>
-          перелік країн
-        </MenuItem>
-        {countries.map( (country, index) => (
-          <MenuItem key={index} value={country}>
-            {country}
-          </MenuItem>
-        ) )}
-      </Select>
+	  <FormControl required size="small">
+	    <InputLabel id="country-label">країна виробництва</InputLabel>
+        <Select name="country"
+		  labelId="country-label" id="country"
+		>
+          <MenuItem value="" disabled><em>перелік країн</em></MenuItem>
+          {countries.map( (country, index) => (
+            <MenuItem key={index} value={country}>{country}</MenuItem>
+          ) )}
+        </Select>
+	    <FormHelperText>* Required</FormHelperText>
+	  </FormControl>
 	  		
       {/* Поле форми для вибору категорії напою */}
-	  <InputLabel htmlFor="category">Виберіть категорію напою</InputLabel>
-      <Select id="category" name="category" defaultValue="">
-        <MenuItem value="" disabled>
-          перелік категорій
-        </MenuItem>
-        {categories.map((category, index) => (
-          <MenuItem key={index} value={category}>
-            {category}
-          </MenuItem>
-        ))}
-      </Select>
+	  <FormControl required size="small">
+	    <InputLabel id="category-label">категорія напою</InputLabel>
+        <Select name="category"
+		  labelId="category-label" id="category"
+		>
+          <MenuItem value="" disabled><em>перелік категорій</em></MenuItem>
+          {categories.map( (category, index) => (
+            <MenuItem key={index} value={category}>{category}</MenuItem>
+          ) )}
+        </Select>
+	    <FormHelperText>* Required</FormHelperText>
+	  </FormControl>
 				
       {/* Поле форми для введення назви напою */}
-	  <TextField type="text"
+	  <TextField type="text" color="secondary" size="small"
         id="title" name="title"
-        label="Введіть найменування напою"
+        label="* Введіть найменування напою"
         placeholder="Назва місткістьL"
+		helperText="* Please enter beverige title"
       />
-
-	  {/* Поле форми для введення ціни Auchan */}
-	  <TextField type="number"
+	  {/* ----- ЦІНИ МАГАЗИНІВ ----- */}
+      <Divider>поля вводу цін магазинів</Divider>
+	  <TextField type="number" size="small"
         id="priceAuchan" name="priceAuchan"
-        label="Введіть ціну магазину Auchan"
-        placeholder="Ціна Ашан в ГРН"
+        label="Auchan"
+        placeholder="ГРН"
       />
-	
-	  {/* Поле форми для введення ціни Novus */}  
-      <TextField type="number"
+      <TextField type="number" size="small"
         id="priceNovus" name="priceNovus"
-        label="Введіть ціну магазину Novus"
-        placeholder="Ціна Новус в ГРН"
-      />	  
-	  
-	  {/* Поле форми для введення ціни Silpo */}
-	  <TextField type="number"
+        label="Novus"
+        placeholder="ГРН"
+      />	  	  
+	  <TextField type="number" size="small"
         id="priceSilpo" name="priceSilpo"
-        label="Введіть ціну магазину Silpo"
-        placeholder="Ціна Сільпо в ГРН"
-      />
-	  
-	  {/* Поле форми для введення ціни ATB */}
-	  <TextField type="number"
+        label="Silpo"
+        placeholder="ГРН"
+      />	  
+	  <TextField type="number" size="small"
         id="priceATB" name="priceATB"
-        label="Введіть ціну магазину ATB"
-        placeholder="Ціна АТБ в ГРН"
+        label="ATB"
+        placeholder="ГРН"
+		helperText="* якщо немає, то залишаємо поле пустим"
       />
-	  
-
-      {/* Поле форми для введення опису напою */}
-	  <TextField type="text"
+	  {/* ----- ОПИС НАПОЮ ----- */}
+      <Divider>поле для опису напою</Divider>
+	  <TextField type="text" color="secondary" size="small"
         id="description" name="description"
-        label="Введіть короткий опис напою"
-        placeholder="Напишіть щось про цей напій"
+        label="Напишіть щось про цей напій"
+		defaultValue="..."
       />
+	  {/* ----- ФОТО ПЛЯШКИ ----- */}
+	  <Divider>форма для завантаження фото</Divider>
 
       <Link href="/categories/beverages">
-	    <Button>Cancel</Button>
+	    <Button variant="outlined">Cancel</Button>
 	  </Link>
-      <Button type="submit">Create Drink</Button>
+      <Button type="submit" variant="outlined" color="secondary">Create Drink</Button>
 	  </Stack>
     </form>
   );
