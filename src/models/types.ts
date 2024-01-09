@@ -9,7 +9,6 @@ export type RetailPrices = {
     lastUpdated:Date;
   };
 };
-
 export type BottleСapacity = 0.5 | 0.7 | 1.0;
 
 // we will use it in cocktails and recipes
@@ -17,3 +16,12 @@ export type IngredientsAndQuantities<E extends string> = {
   [K in E]?:string;
 };
 
+export type CountryData = {
+  country_name:string;
+  country_id?:number;
+  prefix_ean?:string;
+};
+export type CategoriesData = {
+  drink_category:string;
+  drink_id?:number;
+};
