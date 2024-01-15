@@ -1,14 +1,7 @@
 // @/models/enums.ts
-
-export enum RetailChain {
-  Auchan = 'Auchan',
-  Novus = 'Novus',
-  Silpo = 'Silpo',
-  ATB = 'ATB',
-}
-
 export enum Country {
   Argentina = 'Argentina',
+  Armenia = 'Armenia',
   Australia = 'Australia',
   Barbados = 'Barbados',
   Belgium = 'Belgium',
@@ -16,15 +9,19 @@ export enum Country {
   Bulgaria = 'Bulgaria',
   Cuba = 'Cuba',
   CzechRepublic = 'Czech Republic',
+  Dominican = 'Dominican',
   Finland = 'Finland',
   France = 'France',
+  Georgia = 'Georgia',
   Germany = 'Germany',
   Greece = 'Greece',
   Ireland = 'Ireland',
   Italy = 'Italy',
   Jamaica = 'Jamaica',
   Mexico = 'Mexico',
+  Norway = 'Norway',
   Poland = 'Poland',
+  Portugal = 'Portugal',
   Scotland = 'Scotland',
   Slovakia = 'Slovakia',
   SouthAfrica = 'South Africa',
@@ -33,12 +30,15 @@ export enum Country {
   Ukraine = 'Ukraine',
   USA = 'USA',
 }
-
 export enum DrinkCategory {
+  Absinthe = 'absinthe',
   Bourbon = 'bourbon',
+  Brandy = 'brandy',
   Champagne = 'champagne',
+  Cider = 'cider',
   Gin = 'gin',
   Horilka = 'horilka',
+  Liqueur = 'liqueur',
   Portwein = 'portwein',
   Rum = 'rum',
   Tequila = 'tequila',
@@ -97,7 +97,6 @@ export enum CocktailIngredients {
   WHISKEY = 'Whiskey',
   WORCESTERSHIRE_SAUCE = 'Worcestershire Sauce',
 }
-
 export enum GlassType {
   BODEGA = 'Bodega',
   COCKTAIL = 'Cocktail',
@@ -117,7 +116,6 @@ export enum GlassType {
   SOUR = 'Sour',
   WINE = 'Wine',
 }
-
 export enum RecipeIngredients {
   BakingPowder = 'Baking Powder',
   Butter = 'Butter',
@@ -142,4 +140,3 @@ export enum RecipeIngredients {
   Venison = 'Venison',
   Duck = 'Duck',
 }
-
