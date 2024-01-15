@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Typography variant="h1">
-        Ваш помічник у виборі товарів з найкращою ціною.
+        Ваш помічник у перевірці цін магазинів для напоїв.
       </Typography>
       <Typography variant="h2">
         А також до вашої уваги добірки рецептів та коктейлів.
