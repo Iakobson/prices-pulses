@@ -215,8 +215,8 @@ const beveragesData:IBeverage[] = [
     category: DrinkCategory.Whiskey,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 795, lastUpdated: new Date('2024-081-01') },
-      [RetailChain.Novus]: { price: 699, lastUpdated: new Date('2024-08-01') },
+      [RetailChain.Auchan]: { price: 795, lastUpdated: new Date('2024-08-01') },
+      [RetailChain.Novus]: { price: 699, lastUpdated: new Date('2024-08-02') },
       [RetailChain.Silpo]: { price: 709, lastUpdated: new Date('2024-08-01') },
       [RetailChain.ATB]: { price: 0, lastUpdated: new Date('2024-08-01') },
     },
