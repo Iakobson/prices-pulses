@@ -386,7 +386,7 @@ const beveragesData:IBeverage[] = [
     category: DrinkCategory.Rum,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 934, lastUpdated: new Date('2023-12-22') },
+      [RetailChain.Auchan]: { price: 934, lastUpdated: new Date('2024-08-02') },
       [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 0, lastUpdated: new Date('2024-08-01') },
@@ -420,7 +420,7 @@ const beveragesData:IBeverage[] = [
     category: DrinkCategory.Rum,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 649, lastUpdated: new Date('2023-12-01') },
+      [RetailChain.Auchan]: { price: 649, lastUpdated: new Date('2024-08-02') },
       [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Silpo]: { price: 649, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 0, lastUpdated: new Date('2024-08-01') },
@@ -438,7 +438,7 @@ const beveragesData:IBeverage[] = [
     volume: 0.7,
     prices: {
       [RetailChain.Auchan]: { price: 642, lastUpdated: new Date('2023-12-22') },
-      [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2024-08-02') },
       [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 0, lastUpdated: new Date('2024-08-01') },
     },
@@ -455,7 +455,7 @@ const beveragesData:IBeverage[] = [
     volume: 0.7,
     prices: {
       [RetailChain.Auchan]: { price: 1149, lastUpdated: new Date('2023-12-22') },
-      [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2024-08-02') },
       [RetailChain.Silpo]: { price: 1099, lastUpdated: new Date('2023-12-22') },
       [RetailChain.ATB]: { price: 0, lastUpdated: new Date('2024-08-01') },
     },
@@ -489,7 +489,7 @@ const beveragesData:IBeverage[] = [
     volume: 0.7,
     prices: {
       [RetailChain.Auchan]: { price: 452, lastUpdated: new Date('2023-12-22') },
-      [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2024-08-02') },
       [RetailChain.Silpo]: { price: 409, lastUpdated: new Date('2023-12-22') },
       [RetailChain.ATB]: { price: 0, lastUpdated: new Date('2024-08-01') },
     },
@@ -506,7 +506,7 @@ const beveragesData:IBeverage[] = [
     volume: 0.7,
     prices: {
       [RetailChain.Auchan]: { price: 399, lastUpdated: new Date('2024-08-01') },
-      [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2024-08-02') },
       [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 0, lastUpdated: new Date('2024-08-01') },
     },
@@ -524,7 +524,7 @@ const beveragesData:IBeverage[] = [
     prices: {
       [RetailChain.Auchan]: { price: 649, lastUpdated: new Date('2023-12-22') },
       [RetailChain.Novus]: { price: 749, lastUpdated: new Date('2023-12-22') },
-      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2024-08-02') },
       [RetailChain.ATB]: { price: 0, lastUpdated: new Date('2024-08-01') },
     },
     inWish: false,
@@ -541,7 +541,7 @@ const beveragesData:IBeverage[] = [
     prices: {
       [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2024-08-01') },
       [RetailChain.Novus]: { price: 509, lastUpdated: new Date('2023-12-22') },
-      [RetailChain.Silpo]: { price: 509, lastUpdated: new Date('2023-12-22') },
+      [RetailChain.Silpo]: { price: 509, lastUpdated: new Date('2024-08-02') },
       [RetailChain.ATB]: { price: 0, lastUpdated: new Date('2024-08-01') },
     },
     inWish: false,
@@ -574,7 +574,7 @@ const beveragesData:IBeverage[] = [
     category: DrinkCategory.Gin,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2024-08-02') },
       [RetailChain.Novus]: { price: 919, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Silpo]: { price: 699, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 0, lastUpdated: new Date('2024-08-01') },
@@ -591,7 +591,7 @@ const beveragesData:IBeverage[] = [
     category: DrinkCategory.Gin,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2024-08-02') },
       [RetailChain.Novus]: { price: 919, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Silpo]: { price: 699, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 0, lastUpdated: new Date('2024-08-01') },
@@ -608,7 +608,7 @@ const beveragesData:IBeverage[] = [
     category: DrinkCategory.Gin,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2023-11-01') },
+      [RetailChain.Auchan]: { price: 0, lastUpdated: new Date('2024-08-02') },
       [RetailChain.Novus]: { price: 659, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Silpo]: { price: 499, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 0, lastUpdated: new Date('2023-11-01') },
@@ -625,7 +625,7 @@ const beveragesData:IBeverage[] = [
     category: DrinkCategory.Gin,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 529, lastUpdated: new Date('2023-12-22') },
+      [RetailChain.Auchan]: { price: 529, lastUpdated: new Date('2024-08-02') },
       [RetailChain.Novus]: { price: 689, lastUpdated: new Date('2023-12-01') },
       [RetailChain.Silpo]: { price: 499, lastUpdated: new Date('2023-12-22') },
       [RetailChain.ATB]: { price: 0, lastUpdated: new Date('2024-08-01') },
@@ -643,7 +643,7 @@ const beveragesData:IBeverage[] = [
     category: DrinkCategory.Portwein,
     volume: 0.7,
     prices: {
-      [RetailChain.Auchan]: { price: 564, lastUpdated: new Date('2023-12-01') },
+      [RetailChain.Auchan]: { price: 564, lastUpdated: new Date('2024-08-02') },
       [RetailChain.Novus]: { price: 0, lastUpdated: new Date('2023-11-01') },
       [RetailChain.Silpo]: { price: 0, lastUpdated: new Date('2023-11-01') },
       [RetailChain.ATB]: { price: 0, lastUpdated: new Date('2024-08-01') },
